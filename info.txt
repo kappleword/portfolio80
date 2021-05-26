@@ -1,0 +1,13 @@
+구글폰트
+
+awesome
+
+svg > png 변환 https://svgtopng.com/
+
+피커(색찾기)
+https://www.google.com/search?q=color+picker&oq=color+picker&aqs=chrome..69i57j0l9.3429j0j4&sourceid=chrome&ie=UTF-8
+
+https://fontawesome.com/icons/apple-alt?style=solid
+
+BEM?
+Block Element Modifier

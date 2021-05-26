@@ -1,0 +1,207 @@
+/* Global변수 */
+:root{
+/* Color */
+--color-white:#ffffff;
+--color-black:#4d4d4d;
+--color-red:#fc2003;
+--color-blue:#030ffc;
+--color-purple:#9d03fc;
+--color-pink:#ed4ae2;
+--color-brown:#c9552e;
+--color-mint:#BDFCC9;
+/* Font size */
+--font-large: 48px;
+--font-medium: 28px;
+--font-regular: 18px;
+--font-small: 16px;
+--font-micro: 14px;
+/* Font weight */
+--weight-bold:700;
+--weight-semi-bold:600;
+--weight-regular:400;
+
+/* Size */
+--size-border-raduis: 4px;
+/* Annimation */
+--animation-duration: 300ms;
+}
+
+* {
+  box-sizing: border-box;
+}
+body{
+  font-family: "Open Sans";
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+ul{
+  list-style: none;
+  padding-left: 0;
+}
+
+li{
+  list-style: none;
+}
+
+button{/* 버튼 테두리 없애버리기 */
+  background-color: transparent;
+  /* transparent : 배경색과 같게 해준다 */
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+/* Navbar */
+#navbar{
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-purple);
+  padding: 16px;
+  color: var(--color-white);
+}
+
+.navbar__menu{
+  display: flex;
+}
+
+.navbar__logo{
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
+}
+.navbar__menu__item{
+  padding: 8px 12px;
+  margin: 0 4px;
+  color: var(--color-white);
+  cursor:pointer;
+  border-radius: var(--size-border-raduis);
+}
+
+.navbar__menu__item.active{
+  border: 1px solid white;
+}
+
+.navbar__menu__item.hover{
+  background-color: var(--color-blue);
+}
+
+/* Home */
+#home{
+  background: url("images/ice.jpg") center/cover no-repeat;
+  padding: 40px;
+  text-align: center;
+}
+
+.home__avatar{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 2px solid var(--color-red);
+}
+
+.home__title,
+.home__description{
+  color: darkgreen;
+}
+
+.home__contact{
+  color: darkgreen;
+  font-size: var(--font-regular);
+  font-weight: var(--weight-bold);
+  margin: 24px;
+  padding: 8px 12px;
+  border: 2px solid darkgreen;
+  border-radius: var(--size-border-raduis);
+}
+
+/* Section common */
+.section{
+  padding: 50px;
+  text-align: center;
+  margin: auto;
+  max-width: 1200px;/*최대 크기 고정*/
+}
+
+/* About */
+.about__majors{
+  display:flex;
+  justify-content: space-between;
+  margin: 80px 0;
+}
+.major__icon{
+  width: 170px;
+  height: 170px;
+  font-size: 70px;
+  line-height: 160px;  /* 높이조절 부분 문제시 check */
+  margin: auto;
+  color: var(--color-black);
+  border : 1px solid var(--color-black);
+  border-radius: 50%;
+}
+
+.major__icon:hover i{
+  color: var(--color-mint);
+  transform: rotate(-30deg) scale(1.1);
+}
+
+.major__title,
+.major__description{
+  color: var(--color-black);
+}
+
+.major__description{
+  font-size: var(--font-small);
+}
+
+.school{
+  display: flex;
+  align-items: center;
+}
+
+.school__description{
+  margin: 0 16px;
+  text-align: left;
+}
+
+.school__name,
+.school__period{
+  color: var(--color-black);
+}
+
+.school__name{
+  font-size: var(--font-small);
+}
+
+.school__period{
+  font-size: var(--font-micro);
+}
+
+/* Paragraph */
+h1{
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  color: var(--color-black);
+  margin: 10px 0px;
+}
+h2{
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
+  color: var(--color-black);
+  margin: 8px 0px;
+}
+h3{
+  font-size: var(--font-regular);
+  font-weight: var(--weight-bold);
+  color: var(--color-black);
+  margin: 8px 0px;
+}
+
+p{
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+  color: var(--color-black);
+  margin: 4px 0px;
+}
